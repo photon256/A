@@ -1,6 +1,7 @@
 async-lru==2.0.2
 cloudscraper
 beautifulsoup4==4.9.3
+pytube
 ffmpeg
 m3u8
 helper
