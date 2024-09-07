@@ -3,8 +3,8 @@ name: Run Bot
 on:
   push:
     branches:
-      - main  # Adjust this to the branch you want to deploy from
-  workflow_dispatch:  # Allows manual triggering
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +17,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.8'  # Adjust to your Python version
+        python-version: '3.8'
+
+    - name: Install FFmpeg
+      run: |
+        sudo apt update
+        sudo apt install -y ffmpeg
 
     - name: Install dependencies
       run: |
