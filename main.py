@@ -232,7 +232,7 @@ async def account_login(bot: Client, m: Message):
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)    
                         count+=1    
                         os.remove(ka)    
-                        time.sleep(1)    
+                        time.sleep(5)    
                     except FloodWait as e:    
                         await m.reply_text(str(e))    
                         time.sleep(e.x)    
@@ -261,7 +261,7 @@ async def account_login(bot: Client, m: Message):
                     await prog.delete(True)    
                     await helper.send_vid(bot, m, cc, filename, thumb, name, prog)    
                     count += 1    
-                    time.sleep(1)
+                    time.sleep(10)
                     
                     
             except Exception as e:
