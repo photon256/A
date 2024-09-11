@@ -30,19 +30,19 @@ from base64 import b64encode, b64decode
 
 
 credit ="😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~" 
-OWNER = int(os.environ.get("OWNER", 961916589))
+OWNER = int(os.environ.get("OWNER", 502980590))
 try: 
     ADMINS=[] 
-    for x in (os.environ.get("ADMINS", "961916589 5702090016").split()):  
+    for x in (os.environ.get("ADMINS", "502980590").split()):  
         ADMINS.append(int(x)) 
 except ValueError: 
         raise Exception("Your Admins list does not contain valid integers.") 
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7070221680:AAHdf_-TvaUTvgEAl6pa0IGAjD72hPAWaW4",    
-   api_id= 21179966,    
-   api_hash= "d97919fb0a3c725e8bb2a25bbb37d57c"
+   bot_token="7083457174:AAGexgaWlR-eB8Rz1QHPzlogzy7hvELkr_s",    
+   api_id= 23031620,    
+   api_hash= "31cb00c1cbe580394778b43105864bca"
 )
 
 @bot.on_message(filters.command(["start"]))    
