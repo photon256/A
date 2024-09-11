@@ -29,7 +29,7 @@ from Crypto.Util.Padding import unpad
 from base64 import b64encode, b64decode
 
 
-credit ="😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~" 
+credit ="𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~" 
 OWNER = int(os.environ.get("OWNER", 502980590))
 try: 
     ADMINS=[] 
@@ -47,17 +47,17 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text("**👋 ʜᴇʟʟᴏ!\n🌟ɪ ᴀᴍ ᴛxᴛ ꜰɪʟᴇ ᴅᴏᴡʟᴏᴀᴅᴇʀ ʙᴏᴛ** \n\n❤️‍🔥 **ᴘʀᴇꜱꜱ /scammer ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ʙʏ ᴛxᴛ**\n\n❤️‍🩹 **ᴊᴏɪɴ ᴏᴜʀ <a href='https://t.me/scammer_botz'>ᴛᴇʟᴇɢʀᴀᴍ ᴄʜᴀɴɴᴇʟ</a>** \n\n💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/scammer_botz'>😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~ </a>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    editable = await m.reply_text("**👋 𝐇𝐄𝐋𝐋𝐎!\n🌟 𝐈 𝐀𝐌 𝐓𝐗𝐓 𝐅𝐈𝐋𝐄 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓** \n\n❤️‍🔥 **𝐏𝐑𝐄𝐒𝐒 /PATHAN 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎 𝐁𝐘 𝐓𝐗𝐓 **\n\n💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~ </a>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
 @bot.on_message(filters.command("Stop"))    
 async def restart_handler(_, m):    
-    await m.reply_text("🚯 **ꜱᴛᴏᴘᴘᴇᴅ** 🚯", True)    
+    await m.reply_text("🚯 **𝐒𝐓𝐎𝐏𝐏𝐄𝐃** 🚯", True)    
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["scammer"]))    
+@bot.on_message(filters.command(["PATHAN"]))    
 async def account_login(bot: Client, m: Message):    
-    editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
+    editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 𝐒𝐄𝐍𝐃 𝐓𝐗𝐓 𝐅𝐈𝐋𝐄 𝐅𝐎𝐑 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
         x = await input.download()
@@ -77,16 +77,16 @@ async def account_login(bot: Client, m: Message):
             links.append(i.split("://", 1))    
         os.remove(x)    
     except:    
-        await m.reply_text("Invalid file input.")    
+        await m.reply_text("𝐈𝐍𝐕𝐀𝐋𝐈𝐃 𝐅𝐈𝐋𝐄 𝐈𝐍𝐏𝐔𝐓.")    
         os.remove(x)    
         return 
     
-    await editable.edit(f"**-═════━‧₊˚❀༉‧₊˚.━═════-\nᴛᴏᴛᴀʟ ʟɪɴᴋꜱ ꜰᴏᴜɴᴅ ᴀʀᴇ {len(links)}**\n\nꜱᴇɴᴅ ꜰʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪꜱ **1**\n-═════━‧₊˚❀༉‧₊˚.━═════-")    
+    await editable.edit(f"**-═════━‧₊˚❀༉‧₊˚.━═════-\n𝐓𝐎𝐓𝐀𝐋 𝐋𝐈𝐍𝐊𝐒 𝐅𝐎𝐔𝐍𝐃 𝐀𝐑𝐄 {len(links)}**\n\n𝐒𝐄𝐍𝐃 𝐅𝐑𝐎𝐌 𝐖𝐇𝐄𝐑𝐄 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐈𝐍𝐈𝐓𝐈𝐀𝐋 𝐈𝐒 **1**\n-═════━‧₊˚❀༉‧₊˚.━═════-")    
     input0: Message = await bot.listen(editable.chat.id)    
     raw_text = input0.text    
     await input0.delete(True)
 
-    await editable.edit("**-═════━‧₊˚❀༉‧₊˚.━═════-\nᴇɴᴛᴇʀ ʙᴀᴛᴄʜ ɴᴀᴍᴇ ᴏʀ ꜱᴇɴᴅ `/d` ꜰᴏʀ ɢʀᴀʙɪɴɢ ꜰʀᴏᴍ ᴛᴇxᴛ ꜰɪʟᴇɴᴀᴍᴇ.\n-═════━‧₊˚❀༉‧₊˚.━═════-**")    
+    await editable.edit("**-═════━‧₊˚❀༉‧₊˚.━═════-\n𝐄𝐍𝐓𝐄𝐑 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄 𝐎𝐑 𝐒𝐄𝐍𝐃 ` /d ` 𝐅𝐎𝐑 𝐆𝐑𝐀𝐁𝐈𝐍𝐆 𝐅𝐑𝐎𝐌 𝐓𝐄𝐗𝐓 𝐅𝐈𝐋𝐄𝐍𝐀𝐌𝐄.\n-═════━‧₊˚❀༉‧₊˚.━═════-**")    
     input1: Message = await bot.listen(editable.chat.id)    
     raw_text0 = input1.text    
     await input1.delete(True)    
@@ -97,7 +97,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-    await editable.edit("**╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━➣\n┣⪼ 144\n┣⪼ 240\n┣⪼ 360\n┣⪼ 480\n┣⪼ 720\n┣⪼ 1080\n╰━━⌈⚡[😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~]⚡⌋━━➣ **")   
+    await editable.edit("**╭━━━━❰𝐄𝐍𝐓𝐄𝐑 𝐑𝐄𝐒𝐎𝐋𝐔𝐓𝐈𝐎𝐍 ━➣\n┣⪼ 144\n┣⪼ 240\n┣⪼ 360\n┣⪼ 480\n┣⪼ 720\n┣⪼ 1080\n╰━━⌈⚡[𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~]⚡⌋━━➣ **")   
     input2: Message = await bot.listen(editable.chat.id)    
     raw_text2 = input2.text    
     await input2.delete(True)    
@@ -121,7 +121,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-    await editable.edit("**-═════━‧₊˚❀༉‧₊˚.━═════-\nᴇɴᴛᴇʀ ʏᴏᴜʀ ɴᴀᴍᴇ ᴏʀ ꜱᴇɴᴅ `de` ꜰᴏʀ ᴜꜱᴇ ᴅᴇꜰᴀᴜʟᴛ\n-═════━‧₊˚❀༉‧₊˚.━═════-**")    
+    await editable.edit("**-═════━‧₊˚❀༉‧₊˚.━═════-\n𝐄𝐍𝐓𝐄𝐑 𝐘𝐎𝐔𝐑 𝐍𝐀𝐌𝐄 𝐎𝐑 𝐒𝐄𝐍𝐃 `de` 𝐅𝐎𝐑 𝐔𝐒𝐄 𝐃𝐄𝐅𝐀𝐔𝐋𝐓\n-═════━‧₊˚❀༉‧₊˚.━═════-**")    
     input3: Message = await bot.listen(editable.chat.id)    
     raw_text3 = input3.text    
     await input3.delete(True)    
@@ -131,7 +131,8 @@ async def account_login(bot: Client, m: Message):
         MR = raw_text3
 
 
-    await editable.edit("-═════━‧₊˚❀༉‧₊˚.━═════-\nɴᴏᴡ ꜱᴇɴᴅ ᴛʜᴇ **ᴛʜᴜᴍʙ ᴜʀʟ**\nᴇɢ : `ʜᴛᴛᴘꜱ://ɢʀᴀᴘʜ.ᴏʀɢ/ꜰɪʟᴇ/45ꜰ562ᴅᴄ05ʙ2874ᴄ7277ᴇ.ᴊᴘɢ`ᴏʀ ꜱᴇɴᴅ [`no`]\n-═════━‧₊˚❀༉‧₊˚.━═════-")    
+    await editable.edit("-═════━‧₊˚❀༉‧₊˚.━═════-\n𝐍𝐎𝐖 𝐒𝐄𝐍𝐃 𝐓𝐇𝐄 **𝐓𝐇𝐔𝐌𝐁 𝐔𝐑𝐋**\n𝐄𝐆 : `ʜᴛᴛᴘꜱ://ɢʀᴀᴘʜ.ᴏʀɢ/ꜰɪʟᴇ/45ꜰ562ᴅᴄ05ʙ2874ᴄ7277ᴇ.ᴊᴘɢ` 𝐎𝐑 𝐒𝐄𝐍𝐃 [`no`]\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
+    
     input6 = message = await bot.listen(editable.chat.id)    
     raw_text6 = input6.text
     thumb = input6.text    
@@ -206,7 +207,7 @@ async def account_login(bot: Client, m: Message):
 
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()    
-            name = f'{str(count).zfill(3)})😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~{name1[:60]}'  
+            name = f'{str(count).zfill(3)})𝐏𝐀𝐓𝐇𝐀𝐍™~{name1[:60]}'  
 
             if "youtu" in url:
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
@@ -224,8 +225,8 @@ async def account_login(bot: Client, m: Message):
 
             try:
   
-                cc = f'**[ 🎬 ] 𝗩𝗜𝗗 𝗜𝗗 : {str(count).zfill(3)}**\n**𝐕𝐢𝐝𝐞𝐨 𝐓𝐢𝐭𝐥𝐞** : {name1}**({res})😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~**.mp4\n\n**𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** : **{b_name}**\n\n@ebooks_pdf_sarkari\n**𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤ {MR}**\n\n'    
-                cc1 = f'**[ 📕 ] 𝗣𝗗𝗙 𝗜𝗗 : {str(count).zfill(3)}**\n**𝐏𝐝𝐟 𝐓𝐢𝐭𝐥𝐞** : {name1} **😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™~**.pdf \n\n**𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** : **{b_name}**\n\n@ebooks_pdf_sarkari\n**𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤ {MR}**\n'    
+                cc = f'**[ 🎬 ] 𝗩𝗜𝗗 𝗜𝗗 : {str(count).zfill(3)}**\n**𝐕𝐢𝐝𝐞𝐨 𝐓𝐢𝐭𝐥𝐞** : {name1}**({res})𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~**.mp4\n\n**𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** : **{b_name}**\n\n\n**𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤ {MR}**\n\n'    
+                cc1 = f'**[ 📕 ] 𝗣𝗗𝗙 𝗜𝗗 : {str(count).zfill(3)}**\n**𝐏𝐝𝐟 𝐓𝐢𝐭𝐥𝐞** : {name1} **𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~**.pdf \n\n**𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** : **{b_name}**\n\n\n**𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤ {MR}**\n'    
                 if "drive" in url:    
                     try:    
                         ka = await helper.download(url, name)    
@@ -254,7 +255,7 @@ async def account_login(bot: Client, m: Message):
                      
                      
                 else:
-                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
+                    Show = f"**⚡Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**\n\n**📚❰Name❱** `{name}\n🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n🌿**Url**» ᴘᴀᴅʜᴀɪ ᴋᴀʀ ʟᴇ ʙʀᴏ🧐\n\n **ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ [𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™]**\n**═════━‧₊˚❀༉‧₊˚.━═════ **"    
                     prog = await m.reply_text(Show)    
                     res_file = await helper.download_video(url, cmd, name)    
                     filename = res_file    
@@ -266,7 +267,7 @@ async def account_login(bot: Client, m: Message):
                     
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed [😎𝖘cᾰ𝗺𝗺ⲉ𝗿:)™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
+                    f"**downloading failed [𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™]**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n═════━‧₊˚❀༉‧₊˚.━═════"
                     )
                 
     except Exception as e:
