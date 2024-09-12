@@ -46,7 +46,11 @@ bot = Client("bot",
 )
 
 @bot.on_message(filters.command(["start"]))    
-async def account_login(bot: Client, m: Message):    
+async def account_login(bot: Client, m: Message): 
+    try:
+        await message.react(emoji="🔥", big=True)
+    except:
+        pass
     editable = await m.reply_text("**👋 𝐇𝐄𝐋𝐋𝐎!\n🌟 𝐈 𝐀𝐌 𝐓𝐗𝐓 𝐅𝐈𝐋𝐄 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐑 𝐁𝐎𝐓** \n\n❤️‍🔥 **𝐏𝐑𝐄𝐒𝐒 /PATHAN 𝐓𝐎 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎 𝐁𝐘 𝐓𝐗𝐓 **\n\n💗 ᴘᴏᴡᴇʀᴇᴅ ʙʏ : 𝐏𝐀𝐓𝐇𝐀𝐍 𝐒𝐈𝐑™~ </a>\n-═════━‧₊˚❀༉‧₊˚.━═════-") 
 
 @bot.on_message(filters.command("Stop"))    
